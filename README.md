@@ -37,7 +37,7 @@ app.py
 Dockerfile
 docker-compose.yml
 requirements.txt
-templates/
+templates/index.html
 ```
 
 ---
