@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Messaggi</title>
+</head>
+<body>
+
+    <h1>Messaggi salvati</h1>
+
+    {% if messages %}
+        <ul>
+            {% for msg in messages %}
+                <li>{{ msg }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nessun messaggio</p>
+    {% endif %}
+
+    <h2>Aggiungi messaggio</h2>
+
+    <form method="POST" action="/add">
+        <input type="text" name="text" required>
+        <button type="submit">Invia</button>
+    </form>
+
+</body>
+</html>
